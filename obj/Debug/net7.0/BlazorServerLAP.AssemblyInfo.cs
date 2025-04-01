@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BlazorServerLAP")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45de8b61611daf6c6e860666009207e16fb4184b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ded7998522ff90cedf8c17d8502062d801e3b45e")]
 [assembly: System.Reflection.AssemblyProductAttribute("BlazorServerLAP")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BlazorServerLAP")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
