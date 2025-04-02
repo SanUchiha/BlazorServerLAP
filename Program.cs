@@ -1,4 +1,5 @@
-using BlazorServerLAP.Models;
+using BlazorServerLAP.Models.Configurations;
+using BlazorServerLAP.Services;
 using Microsoft.EntityFrameworkCore;
 
 WebApplicationBuilder builder = WebApplication.CreateBuilder(args);
@@ -9,6 +10,8 @@ string? conn = configuration.GetConnectionString("connectionString");
 sp.AddDbContext<ApplicationDBContext>(o => o.UseSqlServer(conn));
 sp.AddRazorPages();
 sp.AddServerSideBlazor();
+sp.AddScoped<ICampusService, CampusService>();
+sp.AddLogging();
 
 WebApplication app = builder.Build();
 

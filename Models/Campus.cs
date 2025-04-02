@@ -28,6 +28,7 @@ public partial class Campus
     public string? PaymentMethodThree { get; set; }
     [PasswordValidation]
     public required string Password { get; set; }
+    public bool IsCampusDeleted { get; set; } = false;
 
     public List<PersonCampus> PersonCampus { get; set; } = new List<PersonCampus>();
 }

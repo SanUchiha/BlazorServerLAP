@@ -1,4 +1,4 @@
-﻿namespace BlazorServerLAP.Dtos;
+﻿namespace BlazorServerLAP.Dtos.Result;
 
 public class ResultDTO
 {

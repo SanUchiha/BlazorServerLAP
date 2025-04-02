@@ -28,6 +28,7 @@ public class Person
     public bool Authorization { get; set; }
     public string? Signed { get; set; }
     public string? ShirtSize { get; set; }
+    public bool IsPersonDeleted { get; set; } = false;
 
     public virtual List<PersonCampus> PersonCampus { get; set; } = new List<PersonCampus>();
 }
