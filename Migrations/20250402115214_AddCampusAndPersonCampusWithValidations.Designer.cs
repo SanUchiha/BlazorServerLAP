@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BlazorServerLAP.Migrations
 {
     [DbContext(typeof(ApplicationDBContext))]
-    [Migration("20250402105624_AddCampusAndPersonCampusWithValidations")]
+    [Migration("20250402115214_AddCampusAndPersonCampusWithValidations")]
     partial class AddCampusAndPersonCampusWithValidations
     {
         /// <inheritdoc />
@@ -96,6 +96,11 @@ namespace BlazorServerLAP.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasDefaultValue(0);
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("PaymentMethodOne")
                         .IsRequired()

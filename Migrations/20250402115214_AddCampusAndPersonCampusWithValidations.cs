@@ -37,7 +37,8 @@ namespace BlazorServerLAP.Migrations
                     FinalTime = table.Column<TimeSpan>(type: "time", nullable: false),
                     PaymentMethodOne = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
                     PaymentMethodTwo = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
-                    PaymentMethodThree = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true)
+                    PaymentMethodThree = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
+                    Password = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false)
                 },
                 constraints: table =>
                 {

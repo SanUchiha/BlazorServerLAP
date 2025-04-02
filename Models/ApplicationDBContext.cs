@@ -77,6 +77,7 @@ public class ApplicationDBContext : DbContext
             entity.Property(c => c.PaymentMethodOne).IsRequired().HasMaxLength(500);
             entity.Property(c => c.PaymentMethodTwo).HasMaxLength(500);
             entity.Property(c => c.PaymentMethodThree).HasMaxLength(500);
+            entity.Property(c => c.Password).IsRequired().HasMaxLength(50);
         });
 
         // Configuración de la relación muchos a muchos entre Person y Campus

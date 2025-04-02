@@ -94,6 +94,11 @@ namespace BlazorServerLAP.Migrations
                         .HasColumnType("int")
                         .HasDefaultValue(0);
 
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.Property<string>("PaymentMethodOne")
                         .IsRequired()
                         .HasMaxLength(500)
